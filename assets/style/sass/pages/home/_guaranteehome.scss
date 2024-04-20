@@ -1,0 +1,40 @@
+.containerS{
+    max-width: 1128px;
+    margin: auto;
+}
+
+.whitesmoke{
+    background-color: whitesmoke;
+    .guarantee{
+        height: 144px;
+        @include flex (space-between , center);
+        .littlebox{
+            gap: 0 10px;
+            max-width: 222px;
+            height: 48px;
+            @include flex(space-between,center);
+            span{
+                // text-wrap: nowrap;
+                font-family: "Poppins";
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+   .whitesmoke{
+    .guarantee{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-content: center;
+        width: 90%;
+        .littlebox{
+            span{
+                font-size: 12px;
+            }
+        }
+       } 
+   }
+}

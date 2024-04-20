@@ -1,0 +1,108 @@
+.containerS{
+    max-width: 1128px;
+    margin: auto;
+}
+
+.featuredPrd{
+    .featured{
+        @include flex(space-between,center);
+        padding: 32px 0 22px 0;
+        p{
+            @include flex;
+            font-family: "Poppins";
+        }
+        h3{
+            font-size: 32px;
+            font-family: "Rubik";
+        }
+    }
+    .products{
+        padding-bottom: 30px;
+        position: relative;
+        gap: 10px 10px;
+        @include flex(space-between,center);
+        .navbuts{
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            @include flex(space-between,center);
+            .leftright{
+                width: 30px;
+                height: 30px;
+                border: 1px solid #EBEBEB;
+                border-radius: 50%;
+                @include flex;
+            }
+        }
+        .product{
+            margin: 0 10px;
+            position: relative;
+            border-radius: 8px;
+            background-color: whitesmoke;
+            @include flex(space-between,center);
+            flex-direction: column;
+            .bagimg{
+                margin-top: 11px;
+            }
+            .content{
+                align-self: self-start;
+                margin: 0 28px;
+                p{
+                    margin: 16px 0;
+                    max-width: 302px;
+                    font-family: "Rubik";
+                }
+                .money{
+                    font-family: "Poppins";
+                    color: red;
+                    font-weight: 600;
+                    font-size: 20px;
+                    span{
+                        color: gray;
+                        font-size: 16px;
+                        margin-left: 18px;
+                    }
+                }
+            }
+            button{
+                width: 86%;
+                height: 48px;
+                background-color: white;
+                border: 1px solid black;
+                border-radius: 8px;
+                margin-bottom: 28px;
+                font-family: "Poppins";
+            }
+            .iconfav{
+                position: absolute;
+                top: 16px;
+                width: 91%;
+                align-self: space-between;
+                @include flex(space-between,center);
+                p{
+                    color: white;
+                    background-color: #43D167;
+                    padding: 6.5px 24px;
+                    border-radius: 8px;
+                    font-family: "Poppins";
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .featuredPrd{
+        .products{
+            gap: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            .navbuts{
+                display: none;
+            }
+        }
+
+  }
+}

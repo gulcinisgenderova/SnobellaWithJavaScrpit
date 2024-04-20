@@ -1,0 +1,172 @@
+.containerS{
+    max-width: 1128px;
+    margin: auto;
+}
+
+.path{
+    padding: 10px;
+    height: 55px;
+    @include flex(start,center);  
+    p{
+        @include flex;
+    }  
+}
+
+.detail{
+    @include flex(space-evenly,center);
+    .photos{
+        gap: 0 24px;
+        @include flex;
+        .fourimg{
+            gap: 16px 0;
+            @include flex;
+            flex-direction: column;
+            .imgs{
+                border: 1px solid whitesmoke;
+                img{
+                    padding: 7.5px 1px;
+                }
+            }
+            
+        }
+        .mainimg{
+            border-radius: 3px;
+            background-color: whitesmoke;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            .main{
+                height: 473px;
+                max-width: 456px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .icon{
+                width: 89%;
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                top: 24px;
+                p{
+                    background-color: #DF4244;
+                    color: white;
+                    width: 79px;
+                    height: 32px;
+                    @include flex;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+    .content{
+        @include flex;
+        flex-direction: column;
+        gap: 30px 0;
+        max-width: 450px;
+        h3{
+            font-size: 24px;
+            font-family: "Rubik"
+        }
+        .price{
+            @include simplegrid;
+            gap: 10px;
+            width: 100%;
+            .money{
+                font-family: "Poppins";
+                @include flex;
+                max-width: 220px;
+                height: 60px;
+                border: 1px solid black;
+                border-radius: 8px;
+            }
+            .red{
+                border: 1px solid red;
+
+            }
+        }
+        .sizecolor{
+            @include flex(space-between,center);
+            width: 100%;
+            .size ,.color{
+                h5{
+                    font-size: 16px;
+                    margin: 5px 0 25px 0;
+                }
+                span{
+                    margin-right: 10px;
+                    padding: 10px 15px;
+                    font-size: 16px;
+                    border: 1px solid rgb(191, 191, 191);
+                    border-radius: 8px;
+                }
+            }
+            .color{
+                padding-right: 14px;
+                .palette{
+                    @include flex;
+                    gap: 0 15px;
+                    .dot{
+                        height: 15px;
+                        width: 15px;
+                        border: 1px solid rgb(191, 191, 191);
+                        border-radius: 50%;
+                    }
+                    .red{
+                        background-color: red;
+                    }
+                    .pink{
+                        background-color: pink;
+                    }
+                    .green{
+                        background-color: green;
+                    }
+                    .blue{
+                        background-color: blue;
+                    }
+                }
+                
+            }
+        }
+        .butts{
+            @include flex(space-evenly,center);
+            width: 100%;
+            gap: 0 10px;
+            button{
+                width: 80%;
+                height: 52px;
+                @include flex;
+                border: 1px solid black;
+                border-radius: 8px;
+            }
+            .redbutton{
+                background-color: #DF4244;
+                color: white;
+                border: #DF4244;
+            }
+        }
+        .whatsapp{
+            font-family: "Poppins";
+            align-self: start;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+        img{
+            align-self: flex-start;
+        }
+    }    
+}
+
+
+@media only screen and (max-width: 992px) {
+    .detail{
+        padding: 10px;
+        gap: 25px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        @include flex;
+        flex-direction: column;
+    }
+}

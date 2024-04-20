@@ -1,0 +1,167 @@
+.favorites-title {
+  margin-left: 5px;
+  .favorites-title-img {
+    margin: 0 13px;
+  }
+
+  .favorites-title-first {
+    font-size: 14px;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: #1d1d1d;
+    margin-top: 32px;
+  }
+}
+
+.my-account-favorites {
+  max-width: 1128px;
+  display: flex;
+  margin: auto;
+}
+
+.favorites-title-second {
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Rubik";
+    color: #212121;
+    margin-bottom: 48px;
+    margin-top: 6px;
+  }
+}
+
+.favorites-account {
+  max-width: 264px;
+  height: 335px;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  margin: 5px auto;
+  .favorites-account-title {
+    display: flex;
+    img {
+      width: 50px;
+      height: 50px;
+      margin-left: 14px;
+      margin-top: 17px;
+    }
+    .account-information {
+      margin-left: 20px;
+      h4 {
+        margin-top: 17px;
+        font-family: "Rubik";
+        font-weight: bold;
+      }
+      p {
+        margin-top: 16px;
+        font-size: 14px;
+      }
+    }
+  }
+  .favorites-about {
+    display: flex;
+    margin-left: 24px;
+    margin-top: 14px;
+    p {
+      margin-left: 12px;
+      font-size: 14px;
+    }
+  }
+  .favorites-hearth {
+    display: flex;
+    margin-left: 24px;
+    margin-top: 14px;
+    p {
+      margin-left: 12px;
+      font-size: 14px;
+    }
+  }
+  .favorites-comment {
+    display: flex;
+    margin-left: 24px;
+    margin-top: 14px;
+    p {
+      margin-left: 12px;
+      font-size: 14px;
+    }
+  }
+  .favorites-address {
+    display: flex;
+    margin-left: 24px;
+    margin-top: 14px;
+    p {
+      margin-left: 12px;
+      font-size: 14px;
+    }
+  }
+  .favorites-login {
+    display: flex;
+    margin-left: 24px;
+    margin-top: 14px;
+    p {
+      margin-left: 12px;
+      font-size: 14px;
+    }
+  }
+}
+
+.lineI {
+  width: 263px;
+  border: 1px solid #e4e4e4;
+  margin-top: 16px;
+}
+
+.line-first {
+  width: 263px;
+  border: 1px solid #e4e4e4;
+  margin-top: 14px;
+}
+
+.line-second {
+  width: 263px;
+  border: 1px solid #e4e4e4;
+  margin-top: 14px;
+}
+
+.line-four {
+  width: 263px;
+  border: 1px solid #e4e4e4;
+  margin-top: 14px;
+}
+
+.line-five {
+  width: 263px;
+  border: 1px solid #e4e4e4;
+  margin-top: 14px;
+}
+
+.favorites-boxs {
+}
+
+@media only screen and (max-width: 992px) {
+  .my-account-favorites {
+    max-width: 1128px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .featuredPrd .products {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .product-container-five {
+    margin-top: 130px;
+  }
+  .favorites-title-second {
+    h2 {
+      font-size: 22px;
+      font-weight: bold;
+      font-family: "Rubik";
+      color: #212121;
+      margin-bottom: 18px;
+      margin-top: 5px;
+    }
+  }
+}

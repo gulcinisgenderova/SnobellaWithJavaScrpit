@@ -1,0 +1,39 @@
+.serachboxG{
+    width: 504px;
+height: 48px;
+gap: 0px;
+border-radius: 8px 0px 0px 0px;
+opacity: 0px;
+background-color: #F7F9FC;
+border: none;
+padding: 5px;
+display: flex;
+margin-left: 10px;
+justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+    .serachboxG{
+        display: none;
+      }
+    }
+
+.footerbuttonG{
+  border: none;
+}    
+.search2input{
+  width: 24px;
+  height: 24px;
+}
+.footerboxG{
+  width: 504px;
+  height: 48px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+  background-color: whi;
+  border: none;
+  padding: 5px;
+  display: flex;
+  margin-left: 10px;
+  justify-content: space-between;
+}   

@@ -1,0 +1,43 @@
+.containerS{
+    max-width: 1128px;
+    margin: auto;
+}
+
+.guaranteedetail{
+    margin-top: 60px;
+    border: 1px solid #E4E4E4;
+    height: 247px;
+    @include flex (space-around , center);
+    .littlebox{
+        gap: 0 10px;
+        max-width: 222px;
+        height: 200px;
+        flex-direction: column;
+        @include flex(center,center);
+        span{
+            text-align: center;
+            font-family: "Poppins";
+            padding: 16px 0;
+        }
+        p{
+            text-align: center;
+            color: #212121BF;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .guaranteedetail{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-content: center;
+        height: auto;
+        .white{background-color: whitesmoke;}
+       }
+       .line{
+        display: none;
+    } 
+   }
