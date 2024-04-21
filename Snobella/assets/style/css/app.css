@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 * {
   padding: 0px;
@@ -889,54 +890,64 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  /* Ürün kartları için genel stil */
+  /* Ürün resimleri için stil */
+  /* Ürün başlığı için stil */
+  /* Ürün fiyatı için stil */
+  /* Sepete ekle butonu için stil */
+  /* Favorilere ekle butonu için stil */
 }
-.featuredPrd .products .product .bagimg {
-  margin-top: 11px;
+.featuredPrd .products .product .card {
+  width: 250px;
+  padding: 15px;
+  border: 1px solid rgba(255, 140, 0, 0.5);
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(255, 140, 0, 0.5);
+  text-align: center;
+  margin-bottom: 20px;
 }
-.featuredPrd .products .product .content {
-  align-self: self-start;
-  margin: 0 28px;
+.featuredPrd .products .product .cardImg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
-.featuredPrd .products .product .content p {
-  margin: 16px 0;
-  max-width: 302px;
-  font-family: "Rubik";
-}
-.featuredPrd .products .product .content .money {
-  font-family: "Poppins";
-  color: red;
-  font-weight: 600;
-  font-size: 20px;
-}
-.featuredPrd .products .product .content .money span {
-  color: gray;
+.featuredPrd .products .product .cardTitle {
   font-size: 16px;
-  margin-left: 18px;
+  font-weight: bold;
+  margin: 10px 0;
 }
-.featuredPrd .products .product button {
-  width: 86%;
-  height: 48px;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 8px;
-  margin-bottom: 28px;
-  font-family: "Poppins";
+.featuredPrd .products .product .cardPrice {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
 }
-.featuredPrd .products .product .iconfav {
-  position: absolute;
-  top: 16px;
-  width: 91%;
-  align-self: space-between;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.featuredPrd .products .product .basketButton {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
-.featuredPrd .products .product .iconfav p {
-  color: white;
-  background-color: #43D167;
-  padding: 6.5px 24px;
-  border-radius: 8px;
-  font-family: "Poppins";
+.featuredPrd .products .product .favButton {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: orangered;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 @media only screen and (max-width: 992px) {
