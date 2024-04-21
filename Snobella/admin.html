@@ -13,6 +13,79 @@
     <link rel="stylesheet" href="./assets/style/css/app.css" />
   </head>
   <body>
+    <header class="headerG">
+      <div class="green">
+        <div class="topbarcontainerG">
+          <div class="leftsideG">
+            <div class="telefon">
+              <img
+                class="topphone"
+                src="./assets/images/icon/Vector.svg"
+                alt=""
+              />
+              +748 344 28 14
+            </div>
+          </div>
+          <div class="rightsideG">
+            <div class="right">Terms of Use</div>
+            <div class="right faq">FAQ</div>
+            <div class="right">Customer service</div>
+          </div>
+        </div>
+      </div>
+      <!-- topbar end -->
+      <div class="gg">
+        <div class="bottombarcontainerG">
+          <div class="bot boxingG">
+            <div class="burger">
+              <select onchange="location = this.value;" name="" id="">
+                <option selected value=""></option>
+                <option value="index.html">Home</option>
+                <option value="product.html">Product</option>
+                <option value="ProductDetail.html">Review</option>
+                <option value="shopping.html">ShoppingCart</option>
+                <option value="favorites.html">Favorites</option>
+                <option value="./admin.html">Admin</option>
+
+              </select>
+            </div>
+            <span class="snobelG">Snobella</span>
+            <div class="bot serachboxG">
+              <input
+                class="bot searchinputG"
+                type="text"
+                placeholder="Search all product"
+              />
+              <img src="./assets/images/icon/search 1.svg" alt="" />
+            </div>
+            <div class="bot navbariconsG">
+              <div class="avatarG">
+                <img src="./assets/images/icon/avatar 1.svg" alt="" />
+                <span class="log">Sign Up</span>
+              </div>
+
+              <div class="heartG">
+                <img src="./assets/images/icon/heart (2).svg" alt="" />
+                <span class="log">Wishlist</span>
+              </div>
+
+              <div class="bagG">
+                <img src="./assets/images/icon/bag.svg" alt="" />
+                <span class="log">Basket</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbottomG">
+          <a href="index.html" class="navhomeG">Home</a>
+          <a href="product.html" class="navhomeG">Products</a>
+          <a href="ProductDetail.html" class="navhomeG">Detail/Review</a>
+          <a href="shopping.html" class="navhomeG">ShoppingCart</a>
+          <a href="favorites.html" class="navhomeG">Favorites</a>
+          <a href="Address.html" class="navhomeG">Address</a>
+      </div>
+      </div>
+    </header>
     <section id="adminPanel">
       <table class="table table-striped">
         <thead>
@@ -61,11 +134,7 @@
           <div class="modal-content">
             <div class="modal-body"></div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="btn button"
-                data-bs-dismiss="modal"
-              >
+              <button type="button" class="btn button" data-bs-dismiss="modal">
                 Close
               </button>
               <button type="button" class="btn button saveButton">
@@ -76,13 +145,82 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="footertopG">
+        <span class="footerlogoG">Snobella</span>
+        <div class="footerboxG">
+          <input
+            class="footerbuttonG"
+            type="text"
+            placeholder="Search all product"
+          />
+          <img
+            class="search2input"
+            src="./assets/images/icon/search 2.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="footercontainer">
+        <div class="textfooterG">
+          <p class="fottertext">
+            The wise man therefore Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ex commodi cum officia.
+          </p>
+          <div class="mailfooter">
+            <img src="./assets/images/icon/mail.svg" alt="" />
+            Snobella@gmail.com
+          </div>
+          <div class="telfooter">
+            <img src="./assets/images/icon/phone-call (3) 1.svg" alt="" /> +748
+            383 23 14
+          </div>
+          <div class="footerinputmessage">
+            <img src="./assets/images/icon/tg.svg" alt="" />
+            <a href="">Send Message</a>
+          </div>
+        </div>
+        <div class="footerright">
+          <div class="leftfooter">
+            <h2 class="boldtext">Shop</h2>
+            <p class="footerlastetxt">Shoulder Bag</p>
+            <p class="footerlastetxt">Backpack</p>
+            <p class="footerlastetxt">Tote Bag</p>
+            <p class="footerlastetxt">Hand Bag</p>
+            <p class="footerlastetxt">Evening Bag</p>
+            <p class="footerlastetxt">Purse</p>
+          </div>
+          <div class="leftfooter">
+            <h2 class="boldtext">Company</h2>
+            <p class="footerlastetxt">About Us</p>
+            <p class="footerlastetxt">Contact</p>
+            <p class="footerlastetxt">Terms of use</p>
+            <p class="footerlastetxt">Customer service</p>
+          </div>
+          <div class="leftfooter">
+            <h2 class="boldtext">Help</h2>
+            <p class="footerlastetxt">FAQ</p>
+            <p class="footerlastetxt">Delivery</p>
+            <p class="footerlastetxt">Cancellation of order</p>
+            <p class="footerlastetxt">Don't go back</p>
+          </div>
+        </div>
+      </div>
+      <div class="footerbottom">
+        <p class="footerbottoms">© 2020. All rights reserved.</p>
+        <div class="footersosial">
+          <img src="./assets/images/icon/instagram (1).svg" alt="" />
+          <img src="./assets/images/icon/facebook (6).svg" alt="" />
+          <img src="./assets/images/icon/whatsapp.svg" alt="" />
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
     <script type="module" src="./assets/js/admin.js"></script>
   </body>
 </html>
