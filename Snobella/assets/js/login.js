@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
 {
     
 }
@@ -56,4 +56,4 @@ logForm.addEventListener("submit", (e) => {
      alert("Username ve passwordunuzu daxil edin!")
     }
   });
->>>>>>> fe333e220ff18d389cb962885f70cc39c5accb11
+// >>>>>>> fe333e220ff18d389cb962885f70cc39c5accb11
