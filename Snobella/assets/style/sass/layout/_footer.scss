@@ -25,15 +25,24 @@ text-align: left;
     height: 24px;
   }
   .footerboxG{
-    border: 1px solid #E4E4E4;
+    border: 1px solid #645f5fa2;
     height: 48px;
     border-radius: 8px;
-    opacity: 0px;
-    background-color: white;
-    border: none;
+    // opacity: 0px;
+    // background-color: white;
+    // border: none;
     padding: 5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    .footerbuttonG{
+      width: 100%;
+      border: none;
+      background: transparent;
+      outline: none;
+      margin-left: 10px;
+    }
   } 
   .fottertext{
     padding-bottom: 30px;
@@ -71,7 +80,19 @@ color: #212121BF;
     margin-top: 20px;
   }
   .footerinputmessage{
-    margin-top: 20px;
+    margin-top: 50px;
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 180px;
+
+    a{
+      text-decoration: none;
+      color: #212121BF;
+    }
   }
   .boldtext{
     font-family: "Rubik";

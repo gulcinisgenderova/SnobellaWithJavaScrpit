@@ -129,15 +129,20 @@ footer {
 }
 
 .footerboxG {
-  border: 1px solid #E4E4E4;
+  border: 1px solid rgba(100, 95, 95, 0.6352941176);
   height: 48px;
   border-radius: 8px;
-  opacity: 0px;
-  background-color: white;
-  border: none;
   padding: 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.footerboxG .footerbuttonG {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 10px;
 }
 
 .fottertext {
@@ -181,7 +186,18 @@ footer {
 }
 
 .footerinputmessage {
-  margin-top: 20px;
+  margin-top: 50px;
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 180px;
+}
+.footerinputmessage a {
+  text-decoration: none;
+  color: rgba(33, 33, 33, 0.7490196078);
 }
 
 .boldtext {
@@ -426,9 +442,10 @@ footer {
 }
 
 .searchinputG {
-  width: 147px;
+  width: 100%;
   border: none;
-  margin: 6px;
+  background: transparent;
+  outline: none;
 }
 
 .bot {
@@ -2482,9 +2499,10 @@ body {
 }
 
 .searchinputG {
-  width: 147px;
+  width: 100%;
   border: none;
-  margin: 6px;
+  background: transparent;
+  outline: none;
 }
 
 .bot {
@@ -2734,9 +2752,10 @@ body {
 }
 
 .searchinputG {
-  width: 147px;
+  width: 100%;
   border: none;
-  margin: 6px;
+  background: transparent;
+  outline: none;
 }
 
 .bot {
@@ -2971,15 +2990,20 @@ footer {
 }
 
 .footerboxG {
-  border: 1px solid #E4E4E4;
+  border: 1px solid rgba(100, 95, 95, 0.6352941176);
   height: 48px;
   border-radius: 8px;
-  opacity: 0px;
-  background-color: white;
-  border: none;
   padding: 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.footerboxG .footerbuttonG {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 10px;
 }
 
 .fottertext {
@@ -3023,7 +3047,18 @@ footer {
 }
 
 .footerinputmessage {
-  margin-top: 20px;
+  margin-top: 50px;
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 180px;
+}
+.footerinputmessage a {
+  text-decoration: none;
+  color: rgba(33, 33, 33, 0.7490196078);
 }
 
 .boldtext {
@@ -3305,4 +3340,65 @@ footer {
 
 .cart {
   border: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.centerLogin {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ff8c00;
+  background-image: linear-gradient(120deg, #ff8c00, #ffd700);
+  text-align: center;
+}
+
+.login-container {
+  background-color: wheat;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.logForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.logForm input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.logForm button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logForm button:hover {
+  background-color: #ff8c00;
 }/*# sourceMappingURL=app.css.map */
