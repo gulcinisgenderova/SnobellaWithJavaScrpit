@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/Poppins-Regular.ttf");
+}
+
+body {
+  font-family: "Poppins";
+}
+#form {
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  input {
+    height: 50px;
+    color: rgb(1, 1, 1, 0.6);
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdada;
+    border-radius: 5px;
+  }
+  label {
+    font-size: 20px;
+    color: rgb(86, 43, 43);
+    margin-bottom: 5px;
+  }
+  .submit {
+    font-size: 18px;
+    background-color: #fff;
+  }
+  .submit:hover {
+    background-color: rgb(67, 58, 58);
+    color: white;
+  }
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    p {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+      input {
+        height: 50px;
+        color: rgb(1, 1, 1, 0.6);
+        padding: 10px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        border: 1px solid #dcdada;
+        border-radius: 5px;
+      }
+      label {
+        font-size: 20px;
+        color: rgb(86, 43, 43);
+        margin-bottom: 5px;
+      }
+     
+}
+.button {
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid #dcdada;
+  }
+  .button:hover {
+    background-color: rgb(67, 58, 58);
+    color: white;
+  }

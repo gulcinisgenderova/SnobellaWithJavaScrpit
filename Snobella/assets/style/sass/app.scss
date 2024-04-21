@@ -7,10 +7,12 @@
 @import './themes/themes';
 @import 'settings';
 @import './layout/navbar';
-@import './layout/navbar';
+@import "./layout/navbar";
 @import './components/buttons';
 @import './base/typography';
 @import './layout/footer';
 @import './pages/shopping/shopping.scss';
 @import './components/buttonsshoppingbag';
-@import './layout/login'
+@import './layout/login';
+@import "./pages/home/FeaturedProducts";
+@import "./pages/home/home";
