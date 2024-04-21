@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "snobella",
-=======
-  "name": "admin",
->>>>>>> 07ff233bd24d2b61b66e51a942c86be7dce04e8e
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
