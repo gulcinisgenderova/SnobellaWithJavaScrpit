@@ -129,15 +129,20 @@ footer {
 }
 
 .footerboxG {
-  border: 1px solid #E4E4E4;
+  border: 1px solid rgba(100, 95, 95, 0.6352941176);
   height: 48px;
   border-radius: 8px;
-  opacity: 0px;
-  background-color: white;
-  border: none;
   padding: 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.footerboxG .footerbuttonG {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 10px;
 }
 
 .fottertext {
@@ -181,7 +186,18 @@ footer {
 }
 
 .footerinputmessage {
-  margin-top: 20px;
+  margin-top: 50px;
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 180px;
+}
+.footerinputmessage a {
+  text-decoration: none;
+  color: rgba(33, 33, 33, 0.7490196078);
 }
 
 .boldtext {
@@ -426,9 +442,10 @@ footer {
 }
 
 .searchinputG {
-  width: 147px;
+  width: 100%;
   border: none;
-  margin: 6px;
+  background: transparent;
+  outline: none;
 }
 
 .bot {
@@ -2405,9 +2422,10 @@ body {
 }
 
 .searchinputG {
-  width: 147px;
+  width: 100%;
   border: none;
-  margin: 6px;
+  background: transparent;
+  outline: none;
 }
 
 .bot {
@@ -2657,9 +2675,10 @@ body {
 }
 
 .searchinputG {
-  width: 147px;
+  width: 100%;
   border: none;
-  margin: 6px;
+  background: transparent;
+  outline: none;
 }
 
 .bot {
@@ -2894,15 +2913,20 @@ footer {
 }
 
 .footerboxG {
-  border: 1px solid #E4E4E4;
+  border: 1px solid rgba(100, 95, 95, 0.6352941176);
   height: 48px;
   border-radius: 8px;
-  opacity: 0px;
-  background-color: white;
-  border: none;
   padding: 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.footerboxG .footerbuttonG {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 10px;
 }
 
 .fottertext {
@@ -2946,7 +2970,18 @@ footer {
 }
 
 .footerinputmessage {
-  margin-top: 20px;
+  margin-top: 50px;
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 180px;
+}
+.footerinputmessage a {
+  text-decoration: none;
+  color: rgba(33, 33, 33, 0.7490196078);
 }
 
 .boldtext {

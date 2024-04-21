@@ -132,9 +132,10 @@ text-align: left;
 }
 
 .searchinputG{
-    width: 147px;
+    width: 100%;
     border: none;
-margin: 6px;
+    background: transparent;
+    outline: none;
 }
 .bot{
     padding: 15px 10px;
