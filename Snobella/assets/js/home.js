@@ -53,7 +53,26 @@ axios("https://fakestoreapi.com/products")
       favIcon.alt = "Favorite Icon";
       iconfav.appendChild(newLabel);
       iconfav.appendChild(favIcon);
+      // favIcon.addEventListener("click", (e) => {
+      //   e.stopPropagation();
+      //   console.log(e.target);
 
+      //   const checkItem = fav.find(
+      //     (elem) => elem.id == e.target.getAttribute("data")
+      //   );
+
+      //   if (checkItem) {
+      //     localStorage.setItem("fav", JSON.stringify(fav));
+      //   } else {
+      //     let elem = res.data.find(
+      //       (elem) => elem.id == e.target.getAttribute("data") 
+      //     );
+      //     fav.push(elem);
+      //     localStorage.setItem("fav", JSON.stringify(fav));
+      //   }
+
+      //   // createCards(element, favPage);
+      // });
       card.appendChild(imageProduct);
       card.appendChild(content);
       card.appendChild(addToCartBtn);
