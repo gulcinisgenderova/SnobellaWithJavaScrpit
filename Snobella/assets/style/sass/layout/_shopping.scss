@@ -1,0 +1,675 @@
+.shopping {
+    .containershop {
+      max-width: 1128px;
+      margin: 0 auto;
+  
+      .homeshop {
+        gap: 7px;
+        margin-top: 83px;
+        display: flex;
+        align-items: center;
+        span {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          font-family: "Poppins";
+          color: rgba(29, 29, 29, 1);
+        }
+        img {
+          color: rgba(43, 43, 43, 1);
+        }
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          font-family: "Poppins";
+          color: rgba(29, 29, 29, 0.75);
+        }
+      }
+      .entry {
+        h1 {
+          font-size: 40px;
+          font-weight: 500;
+          line-height: 68px;
+          font-family: "Rubik";
+          color: rgba(33, 33, 33, 1);
+          margin-bottom: 48px;
+        }
+      }
+      .flexbox {
+        gap: 24px;
+        display: flex;
+        .bagboxes {
+          .bagbox {
+            width: 744px;
+            height: 211px;
+            border: 1px solid rgba(228, 228, 228, 1);
+            border-radius: 8px;
+            display: flex;
+            justify-content: flex-start;
+            padding-top: 16px;
+            margin-bottom: 20px;
+            position: relative;
+  
+            .imgbag {
+              display: flex;
+              justify-content: center;
+              width: 151px;
+              height: 179px;
+              border-radius: 8px;
+              border: 1px solid rgba(249, 249, 249, 1);
+              background-color: rgba(249, 249, 249, 1);
+              margin-left: 17px;
+              margin-right: 24px;
+              
+            }
+            .aboutbag {
+              .hbag {
+                display: flex;
+  
+                h2 {
+                  margin-right: 115px;
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 27.2px;
+                  font-family: "Rubik";
+                  color: rgba(33, 33, 33, 1);
+                  margin-bottom: 12px;
+                }
+                h3 {
+                  font-size: 18px;
+                  font-weight: 500;
+                  line-height: 30.6px;
+                  font-family: "Rubik";
+                  color: rgba(33, 33, 33, 1);
+                }
+              }
+              span {
+                display: flex;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 23.8px;
+                font-family: "Poppins";
+                color: rgba(33, 33, 33, 0.75);
+                margin-bottom: 8px;
+  
+                p {
+                  margin-left: 25px;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 23.8px;
+                  font-family: "Poppins";
+                  color: rgba(33, 33, 33, 0.75);
+                }
+              }
+              .p1 {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 23.8px;
+                font-family: "Poppins";
+                color: rgba(33, 33, 33, 0.75);
+              }
+              .p2 {
+                margin-top: 8px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 23.8px;
+                font-family: "Poppins";
+                color: rgba(33, 33, 33, 0.75);
+              }
+              select {
+                border: 1px solid rgba(228, 228, 228, 1);
+                border-radius: 3px;
+                width: 72px;
+                padding-left: 8px;
+                height: 32px;
+                margin-top: 8px;
+                margin-bottom: 28px;
+  
+                option {
+                  width: 31px;
+                  height: 24px;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 23.8px;
+                  font-family: "Poppins";
+                  color: rgba(33, 33, 33, 0.9);
+                }
+              }
+              .fav {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                bottom: 17px;
+                right: 143px;
+                gap: 8px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 23.8px;
+                font-family: "Poppins";
+                color: rgba(33, 33, 33, 0.75);
+  
+               
+                .redp {
+                  color: rgba(223, 66, 68, 1);
+                }
+              }
+              .rmv {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                bottom: 17px;
+                right: 17px;
+                gap: 8px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 23.8px;
+                font-family: "Poppins";
+                color: rgba(33, 33, 33, 0.75);
+  
+                
+              }
+            }
+          }
+        }
+        .terminal {
+         
+          .orderbag {
+            background-color: rgba(249, 249, 249, 1);
+            width: 360px;
+            height: 275px;
+            border-radius: 8px;
+            border: 1px solid rgba(249, 249, 249, 1);
+            padding-left: 24px;
+            padding-top: 32px;
+  
+            .subtotal {
+              display: flex;
+              gap: 131px;
+  
+              h5 {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 27.2px;
+                font-family: "Poppins";
+                color: rgba(33, 33, 33, 1);
+              }
+              p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 27.2px;
+                font-family: "Poppins";
+                color: rgba(33, 33, 33, 1);
+              }
+              }
+            }
+            .shipping {
+              display: flex;
+              gap: 133px;
+              padding-top: 12px;
+              padding-bottom: 20px;
+  
+              h5 {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 27.2px;
+                font-family: "Poppins";
+                color: rgba(33, 33, 33, 1);
+              }
+              }
+              p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 27.2px;
+                font-family: "Poppins";
+                color: rgba(33, 33, 33, 1);
+              }
+              }
+            }
+            .total {
+              display: flex;
+              gap: 192px;
+  
+  
+              h4 {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 30.6px;
+                font-family: "Poppins";
+                color: rgba(33, 33, 33, 1);
+              }
+              
+              p {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 30.6px;
+                font-family: "Poppins";
+                color: rgba(33, 33, 33, 1);
+              }
+            }
+            .linedash{
+              width: 312px;
+              border: 1px dashed rgba(208, 208, 208, 1);
+              margin-top: 24px;
+              margin-bottom: 22px;
+              
+            }
+            }
+            
+            .apply {
+              border-radius: 8px;
+              border: none;
+              background-color: rgba(255, 105, 94, 1);
+              padding-right: 60px;
+              ::placeholder{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.8px;
+                color: rgba(136, 136, 136, 1);
+                font-family: "Poppins";
+                padding-left: 15px;
+              }
+              input {
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                border-bottom: 1px solid rgba(219, 219, 219, 1);
+                border-top: 1px solid rgba(219, 219, 219, 1);
+                border-left:1px solid rgba(219, 219, 219, 1);
+                border-right: none;
+  
+  
+                width: 210px;
+                height: 48px;
+              }
+              a{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 27.2px;
+                font-family: "Poppins";
+                color: rgba(255, 255, 255, 1);
+                text-decoration: none;
+                
+              }
+  
+            }
+          }
+          .confirm {
+            margin-top: 23px;
+            margin-bottom: 16px;
+  
+            button {
+              cursor: pointer;
+              width: 360px;
+              height: 52px;
+              border-radius: 8px;
+              border: none;
+              color: white;
+              background-color: 
+              rgba(223, 66, 68, 1);
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 27.2px;
+              font-family: "Montserrat";
+            }
+            
+          }
+          .Cash {
+            button {
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 360px;
+              height: 52px;
+              border-radius: 8px;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 27.2px;
+            font-family: "Montserrat";
+             
+            }
+          }
+        
+     @media only screen and (max-width: 992px) {
+    
+    .shopping {
+      .containershop {
+        max-width: 1128px;
+        margin: 0 auto;
+    
+        .homeshop {
+          gap: 7px;
+          margin-top: 83px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            font-family: "Poppins";
+            color: rgba(29, 29, 29, 1);
+          }
+          img {
+            color: rgba(43, 43, 43, 1);
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            font-family: "Poppins";
+            color: rgba(29, 29, 29, 0.75);
+          }
+        }
+        .entry {
+          h1 {
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 68px;
+            font-family: "Rubik";
+            color: rgba(33, 33, 33, 1);
+            margin-bottom: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .flexbox {
+          gap: 24px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .bagboxes {
+            .bagbox {
+              width: 744px;
+              height: 211px;
+              border: 1px solid rgba(228, 228, 228, 1);
+              border-radius: 8px;
+              display: flex;
+              justify-content: flex-start;
+              padding-top: 16px;
+              margin-bottom: 20px;
+              position: relative;
+    
+              .imgbag {
+                display: flex;
+                justify-content: center;
+                width: 151px;
+                height: 179px;
+                border-radius: 8px;
+                border: 1px solid rgba(249, 249, 249, 1);
+                background-color: rgba(249, 249, 249, 1);
+                margin-left: 17px;
+                margin-right: 24px;
+                
+              }
+              .aboutbag {
+                .hbag {
+                  display: flex;
+    
+                  h2 {
+                    margin-right: 115px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 27.2px;
+                    font-family: "Rubik";
+                    color: rgba(33, 33, 33, 1);
+                    margin-bottom: 12px;
+                  }
+                  h3 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 30.6px;
+                    font-family: "Rubik";
+                    color: rgba(33, 33, 33, 1);
+                  }
+                }
+                span {
+                  display: flex;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 23.8px;
+                  font-family: "Poppins";
+                  color: rgba(33, 33, 33, 0.75);
+                  margin-bottom: 8px;
+    
+                  p {
+                    margin-left: 25px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 23.8px;
+                    font-family: "Poppins";
+                    color: rgba(33, 33, 33, 0.75);
+                  }
+                }
+                .p1 {
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 23.8px;
+                  font-family: "Poppins";
+                  color: rgba(33, 33, 33, 0.75);
+                }
+                .p2 {
+                  margin-top: 8px;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 23.8px;
+                  font-family: "Poppins";
+                  color: rgba(33, 33, 33, 0.75);
+                }
+                select {
+                  border: 1px solid rgba(228, 228, 228, 1);
+                  border-radius: 3px;
+                  width: 72px;
+                  padding-left: 8px;
+                  height: 32px;
+                  margin-top: 8px;
+                  margin-bottom: 28px;
+    
+                  option {
+                    width: 31px;
+                    height: 24px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 23.8px;
+                    font-family: "Poppins";
+                    color: rgba(33, 33, 33, 0.9);
+                  }
+                }
+                .fav {
+                  display: flex;
+                  align-items: center;
+                  position: absolute;
+                  bottom: 17px;
+                  right: 143px;
+                  gap: 8px;
+                  font-size: 14px;
+                  font-weight: 500;
+                  line-height: 23.8px;
+                  font-family: "Poppins";
+                  color: rgba(33, 33, 33, 0.75);
+    
+                 
+                  .redp {
+                    color: rgba(223, 66, 68, 1);
+                  }
+                }
+                .rmv {
+                  display: flex;
+                  align-items: center;
+                  position: absolute;
+                  bottom: 17px;
+                  right: 17px;
+                  gap: 8px;
+                  font-size: 14px;
+                  font-weight: 500;
+                  line-height: 23.8px;
+                  font-family: "Poppins";
+                  color: rgba(33, 33, 33, 0.75);
+    
+                  
+                }
+              }
+            }
+          }
+          .terminal {
+           
+            .orderbag {
+              background-color: rgba(249, 249, 249, 1);
+              width: 360px;
+              height: 275px;
+              border-radius: 8px;
+              border: 1px solid rgba(249, 249, 249, 1);
+              padding-left: 24px;
+              padding-top: 32px;
+    
+              .subtotal {
+                display: flex;
+                gap: 131px;
+    
+                h5 {
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 27.2px;
+                  font-family: "Poppins";
+                  color: rgba(33, 33, 33, 1);
+                }
+                p {
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 27.2px;
+                  font-family: "Poppins";
+                  color: rgba(33, 33, 33, 1);
+                }
+                }
+              }
+              .shipping {
+                display: flex;
+                gap: 133px;
+                padding-top: 12px;
+                padding-bottom: 20px;
+    
+                h5 {
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 27.2px;
+                  font-family: "Poppins";
+                  color: rgba(33, 33, 33, 1);
+                }
+                }
+                p {
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 27.2px;
+                  font-family: "Poppins";
+                  color: rgba(33, 33, 33, 1);
+                }
+                }
+              }
+              .total {
+                display: flex;
+                gap: 192px;
+    
+    
+                h4 {
+                  font-size: 18px;
+                  font-weight: 500;
+                  line-height: 30.6px;
+                  font-family: "Poppins";
+                  color: rgba(33, 33, 33, 1);
+                }
+                
+                p {
+                  font-size: 18px;
+                  font-weight: 500;
+                  line-height: 30.6px;
+                  font-family: "Poppins";
+                  color: rgba(33, 33, 33, 1);
+                }
+              }
+              .linedash{
+                width: 312px;
+                border: 1px dashed rgba(208, 208, 208, 1);
+                margin-top: 24px;
+                margin-bottom: 22px;
+                
+              }
+              }
+              
+              .apply {
+                border-radius: 8px;
+                border: none;
+                background-color: rgba(255, 105, 94, 1);
+                padding-right: 60px;
+                ::placeholder{
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 16.8px;
+                  color: rgba(136, 136, 136, 1);
+                  font-family: "Poppins";
+                  padding-left: 15px;
+                }
+                input {
+                  border-top-left-radius: 8px;
+                  border-bottom-left-radius: 8px;
+                  border-bottom: 1px solid rgba(219, 219, 219, 1);
+                  border-top: 1px solid rgba(219, 219, 219, 1);
+                  border-left:1px solid rgba(219, 219, 219, 1);
+                  border-right: none;
+    
+    
+                  width: 210px;
+                  height: 48px;
+                }
+                a{
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 27.2px;
+                  font-family: "Poppins";
+                  color: rgba(255, 255, 255, 1);
+                  text-decoration: none;
+                
+                  
+                }
+    
+              }
+            }
+            .confirm {
+              margin-top: 23px;
+              margin-bottom: 16px;
+    
+              button {
+                cursor: pointer;
+                width: 360px;
+                height: 52px;
+                border-radius: 8px;
+                border: none;
+                color: white;
+                background-color: 
+                rgba(223, 66, 68, 1);
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 27.2px;
+                font-family: "Montserrat";
+              }
+              
+            }
+            .Cash {
+              button {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 360px;
+                height: 52px;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 27.2px;
+              font-family: "Montserrat";
+               
+              }
+            }
+          
+    }

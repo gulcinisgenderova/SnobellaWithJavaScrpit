@@ -23,12 +23,9 @@ const userName= document.createElement('input')
 const passWord= document.createElement('input')
 const submits= document.createElement('button')
 
-
 userName.className=(".userName")
 passWord.className=(".passWord")
 submits.className=(".submits")
-
-
 
 userName.placeholder=" Username"
 passWord.placeholder=" Password"

@@ -48,16 +48,16 @@
   }
   .featured-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 1205px !important;
-    height: 584px;
     .productCard {
       width: 360px;
       height: 508px;
       border-radius: 8px;
       background-color: rgba(249, 249, 249, 1);
       position: relative;
+      margin-top: 20px;
       .slider-icon,
       .slider-icon-end {
         width: 40px;
@@ -88,6 +88,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-top: 15px;
         p {
           font-family: "Poppins";
           font-size: 16px;
@@ -159,7 +160,8 @@
         margin: 16px 0 24px 24px;
         gap: 18px;
         span {
-          width: 73px;
+          margin-top: 15px;
+          width: 93px;
           height: 34px;
           font-family: "Poppins";
           font-weight: 600;
@@ -180,3 +182,15 @@
     }
   }
 }
+.searchBar{
+  margin: 50px, 0;
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  .home-buttons{
+    margin-top: 100px;
+    gap: 30px;
+
+  }
+}
+
