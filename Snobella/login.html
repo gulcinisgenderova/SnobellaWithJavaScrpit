@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/style/css/app.css" >
+    <!-- <link rel="stylesheet" href="sweetalert2.min.css" /> -->
+    <link rel="stylesheet" href="./assets/style/css/app.css" />
   </head>
   <body>
     <div class="centerLogin">
       <div class="login-container">
         <h2>Login</h2>
+        <p>
+          Nor again is there anyone who to enjoy a pleasure that or pursues or
+          desires to obtain
+        </p>
         <form id="login-form" class="logForm">
           <div class="input-group">
             <label for="username">Username:</label>
@@ -22,7 +27,7 @@
             />
           </div>
           <div class="input-group">
-            <label for="password">Password:</label>
+            <label for="password">Code:</label>
             <input
               type="password"
               id="password"
@@ -32,10 +37,14 @@
             />
           </div>
           <button type="submit" class="submits">Login</button>
+          <p>Don't have an account yet? <a href="">Create now</a></p>
           <p id="login-status"></p>
         </form>
       </div>
     </div>
-    <script src="./assets/js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./assets/js/login.js"></script>
   </body>
 </html>
