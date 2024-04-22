@@ -1481,6 +1481,7 @@ body {
 }
 
 .item {
+  padding: 90px;
   text-align: center;
 }
 
@@ -1496,6 +1497,10 @@ body {
   border: 1px solid #E4E4E4;
   position: relative;
   margin: 20px 0;
+}
+.shoppingbagcards img {
+  width: 100px;
+  height: 100px;
 }
 .shoppingbagcards h4 {
   margin-top: 10px;
@@ -1518,11 +1523,19 @@ body {
   right: 20px;
   bottom: 5px;
 }
+.shoppingbagcards .shopright img {
+  width: 30px;
+  height: 30px;
+}
 .shoppingbagcards .shopright2 {
   display: inline;
   position: absolute;
   right: 120px;
   bottom: 5px;
+}
+.shoppingbagcards .shopright2 img {
+  width: 30px;
+  height: 30px;
 }
 .shoppingbagcards .price {
   display: inline;
@@ -2990,6 +3003,7 @@ footer {
 }
 
 .item {
+  padding: 90px;
   text-align: center;
 }
 
@@ -3005,6 +3019,10 @@ footer {
   border: 1px solid #E4E4E4;
   position: relative;
   margin: 20px 0;
+}
+.shoppingbagcards img {
+  width: 100px;
+  height: 100px;
 }
 .shoppingbagcards h4 {
   margin-top: 10px;
@@ -3027,11 +3045,19 @@ footer {
   right: 20px;
   bottom: 5px;
 }
+.shoppingbagcards .shopright img {
+  width: 30px;
+  height: 30px;
+}
 .shoppingbagcards .shopright2 {
   display: inline;
   position: absolute;
   right: 120px;
   bottom: 5px;
+}
+.shoppingbagcards .shopright2 img {
+  width: 30px;
+  height: 30px;
 }
 .shoppingbagcards .price {
   display: inline;

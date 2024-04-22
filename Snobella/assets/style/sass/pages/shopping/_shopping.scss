@@ -15,6 +15,7 @@
     margin: auto;
 }
 .item{
+    padding: 90px;
 
     text-align: center;
 }
@@ -29,6 +30,10 @@
     border: 1px solid #E4E4E4;
      position: relative;
      margin: 20px 0;
+     img{
+        width: 100px;
+        height: 100px;
+      }
     h4{
         margin-top: 10px;
     }
@@ -50,12 +55,20 @@ color: #212121BF;
         position: absolute;
         right: 20px;
         bottom: 5px;
+        img{
+            width: 30px;
+            height: 30px;
+          }
     }
     .shopright2{
         display: inline;
         position: absolute;
         right: 120px;
         bottom: 5px;
+        img{
+            width: 30px;
+            height: 30px;
+          }
     }
     .price{
         display: inline;
@@ -164,3 +177,4 @@ color: #212121BF;
         width: 300px;
     }
 }
+
