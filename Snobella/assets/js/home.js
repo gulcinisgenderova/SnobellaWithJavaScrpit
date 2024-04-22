@@ -1,27 +1,67 @@
-axios("https://fakestoreapi.com/products").then((res) => {
-  res.data.forEach((element) => {
-    console.log(element);
-    const products = document.querySelector(".products");
-    const cardsDiv = document.createElement("div");
-    const imageProduct = document.createElement("img");
-    const titleProduct = document.createElement("p");
-    const priceProduct = document.createElement("p");
-    // const basketButton = document.createElement("button");
-    // const favButton = document.createElement("button");
+function addToCart(product) {
 
+  console.log("Product added to cart:", product);
 
-    imageProduct.src=element.image;
-    titleProduct.innerText=element.title;
-    priceProduct.innerText=element.price;
+  const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
-    imageProduct.className = "imageProduct"
-    titleProduct.className = "titleProduct"
-    priceProduct.className = "priceProduct"
+  cartItems.push(product);
+  localStorage.setItem('cart', JSON.stringify(cartItems));
 
+  console.log("Updated Cart Items:", cartItems);
+}
+axios("https://fakestoreapi.com/products")
+  .then((res) => {
+    const productsContainer = document.querySelector(".products");
 
-    cardsDiv.append(imageProduct,titleProduct,priceProduct);
-    products.appendChild(cardsDiv)
+    res.data.forEach((element) => {
+      const card = document.createElement('div');
+      card.classList.add('product');
 
+      const imageProduct = document.createElement('div');
+      imageProduct.classList.add('imageProduct');
+      const img = document.createElement('img');
+      img.src = element.image;
+      img.alt = "Product Image";
+      imageProduct.appendChild(img);
 
+      const content = document.createElement('div');
+      content.classList.add('content');
+      const title = document.createElement('p');
+      title.textContent = element.title;
+      const price = document.createElement('p');
+      price.textContent = `$${element.price}`;
+      const span = document.createElement('span');
+      span.textContent = 'From $130';
+      price.appendChild(span);
+      content.appendChild(title);
+      content.appendChild(price);
+
+      const addToCartBtn = document.createElement('button');
+      addToCartBtn.textContent = 'Add to Cart';
+      addToCartBtn.classList.add('basketButton');
+
+      addToCartBtn.addEventListener('click', () => {
+        addToCart(element); 
+      });
+
+      const iconfav = document.createElement('div');
+      iconfav.classList.add('iconfav');
+      const newLabel = document.createElement('p');
+      newLabel.textContent = 'New';
+      const favIcon = document.createElement('img');
+      favIcon.src = "/assets/images/icons/favourite.svg";
+      favIcon.alt = "Favorite Icon";
+      iconfav.appendChild(newLabel);
+      iconfav.appendChild(favIcon);
+
+      card.appendChild(imageProduct);
+      card.appendChild(content);
+      card.appendChild(addToCartBtn);
+      card.appendChild(iconfav);
+
+      productsContainer.appendChild(card);
+    });
+  })
+  .catch((error) => {
+    console.error("Error fetching products", error);
   });
-});
