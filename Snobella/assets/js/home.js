@@ -1,86 +1,41 @@
-function addToCart(product) {
+import { productURL } from "./baseURL";
+let featuredContainer=document.querySelector(".featured-container")
 
-  console.log("Product added to cart:", product);
 
-  const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+async function createTable() {
+  let arr = await getDatas(productURL);
+  arr.forEach(element => {
+     
+    let productCard=document.createElement("div");
+    let newProduct= document.createElement("div");
+    let heart= document.createElement("div");
+    let heartImg= document.createElement("img");
+    let bagImage= document.createElement("img");
+    let description= document.createElement("p");
+    let priceBox= document.createElement("div");
+    let addButton= document.createElement("button");
+    let span= document.createElement("span");
 
-  cartItems.push(product);
-  localStorage.setItem('cart', JSON.stringify(cartItems));
 
-  console.log("Updated Cart Items:", cartItems);
-}
-axios("https://fakestoreapi.com/products")
-  .then((res) => {
-    const productsContainer = document.querySelector(".products");
+    productCard.className = "productCard";
+    newProduct.className = "new-product";
+    heart.className = "heart";
+    bagImage.className = "bag";
+    description.className = "description";
+    priceBox.className = "priceBox";
 
-    res.data.forEach((element) => {
-      const card = document.createElement('div');
-      card.classList.add('product');
+    newProduct.innerText = "New";
+    heartImg.src = "./assets/images/icon/heart (2).svg";
+    bagImage.src = element.image;
+    description.innerText = element.title;
+    span.innerText = element.price;
+    addButton.innerText = "Add to basket";
 
-      const imageProduct = document.createElement('div');
-      imageProduct.classList.add('imageProduct');
-      const img = document.createElement('img');
-      img.src = element.image;
-      img.alt = "Product Image";
-      imageProduct.appendChild(img);
+  
 
-      const content = document.createElement('div');
-      content.classList.add('content');
-      const title = document.createElement('p');
-      title.textContent = element.title;
-      const price = document.createElement('p');
-      price.textContent = `$${element.price}`;
-      const span = document.createElement('span');
-      span.textContent = 'From $130';
-      price.appendChild(span);
-      content.appendChild(title);
-      content.appendChild(price);
-
-      const addToCartBtn = document.createElement('button');
-      addToCartBtn.textContent = 'Add to Cart';
-      addToCartBtn.classList.add('basketButton');
-
-      addToCartBtn.addEventListener('click', () => {
-        addToCart(element); 
-      });
-
-      const iconfav = document.createElement('div');
-      iconfav.classList.add('iconfav');
-      const newLabel = document.createElement('p');
-      newLabel.textContent = 'New';
-      const favIcon = document.createElement('img');
-      favIcon.src = "/assets/images/icons/favourite.svg";
-      favIcon.alt = "Favorite Icon";
-      iconfav.appendChild(newLabel);
-      iconfav.appendChild(favIcon);
-      // favIcon.addEventListener("click", (e) => {
-      //   e.stopPropagation();
-      //   console.log(e.target);
-
-      //   const checkItem = fav.find(
-      //     (elem) => elem.id == e.target.getAttribute("data")
-      //   );
-
-      //   if (checkItem) {
-      //     localStorage.setItem("fav", JSON.stringify(fav));
-      //   } else {
-      //     let elem = res.data.find(
-      //       (elem) => elem.id == e.target.getAttribute("data") 
-      //     );
-      //     fav.push(elem);
-      //     localStorage.setItem("fav", JSON.stringify(fav));
-      //   }
-
-      //   // createCards(element, favPage);
-      // });
-      card.appendChild(imageProduct);
-      card.appendChild(content);
-      card.appendChild(addToCartBtn);
-      card.appendChild(iconfav);
-
-      productsContainer.appendChild(card);
-    });
+    
   })
-  .catch((error) => {
-    console.error("Error fetching products", error);
-  });
+}
+createTable()
+
+

@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "Rubik";
+    src: url("../../fonts/static/Rubik-Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("../../fonts/Poppins-Medium.ttf") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.future,
+.bestseller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+  background-color: white;
+  margin-bottom: 96px;
+  .future-head {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      width: 390px !important;
+      height: 54px;
+      font-family: "Rubik";
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 54.4px;
+      color: rgba(0, 0, 0, 1);
+    }
+    a {
+      font-family: "Poppins";
+      text-decoration: none;
+      width: 167px;
+      height: 27px;
+      font-size: 16px;
+      line-height: 27.2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(0, 0, 0, 1);
+      img {
+        margin-left: 8px;
+      }
+    }
+  }
+  .featured-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1205px !important;
+    height: 584px;
+    .productCard {
+      width: 360px;
+      height: 508px;
+      border-radius: 8px;
+      background-color: rgba(249, 249, 249, 1);
+      position: relative;
+      .slider-icon,
+      .slider-icon-end {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(235, 235, 235, 1);
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        left: -22px;
+        top: 234px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .slider-icon-end {
+        left: 338px;
+        top: 234px;
+      }
+      .new-product {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 79px;
+        height: 32px;
+        border-radius: 8px;
+        background-color: rgba(67, 209, 103, 1);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          font-family: "Poppins";
+          font-size: 16px;
+          line-height: 27.2px;
+          font-weight: 500;
+          color: rgba(255, 255, 255, 1);
+          width: 35px;
+          height: 27px;
+        }
+      }
+      .discount {
+        background-color: rgba(223, 66, 68, 1);
+      }
+      .heart {
+        height: 22px;
+        width: 22px;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+      }
+      button {
+        width: 312px;
+        height: 48px;
+        border-radius: 8px;
+        border: 1px solid rgba(33, 33, 33, 1);
+        margin: 0 24px;
+        background-color: rgba(249, 249, 249, 1);
+        text-align: center;
+        font-family: "Poppins";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 27.2px;
+        color: rgba(33, 33, 33, 1);
+      }
+      .bag {
+        width: 218px;
+        height: 243px;
+        margin: 11px 71px 16px 71px;
+      }
+      .bag1 {
+        width: 234px;
+        height: 234px;
+        margin: 0px 62px 36px 64px;
+      }
+      .bag2 {
+        width: 219px;
+        height: 219px;
+        margin: 27px 75px 24px 66px;
+      }
+
+      .starBox {
+        margin: 0px 0px 16px 24px;
+      }
+
+      .description {
+        margin: 0px 34px 0px 24px;
+        font-size: 16px;
+        font-family: "Rubik";
+        font-weight: 400;
+        line-height: 27.2px;
+        width: 302px;
+        height: 54px;
+        color: rgba(0, 0, 0, 1);
+      }
+      .priceBox {
+        display: flex;
+        align-items: center;
+        width: 250px;
+        margin: 16px 0 24px 24px;
+        gap: 18px;
+        span {
+          width: 73px;
+          height: 34px;
+          font-family: "Poppins";
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 34px;
+          color: rgba(247, 81, 69, 1);
+        }
+        .price {
+          width: 120px;
+          height: 27px;
+          font-family: "Poppins";
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 27.2px;
+          color: rgba(54, 54, 54, 0.75);
+        }
+      }
+    }
+  }
+}
