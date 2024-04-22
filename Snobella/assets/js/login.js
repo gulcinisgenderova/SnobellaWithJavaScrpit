@@ -1,33 +1,56 @@
-import { getDatas } from "./request.js";
-import { userURL } from "./baseURL.js";
+let users = [
+  {
+    id: 1,
+    username: "gurban",
+    password: "123",
+  },
+  {
+    id: 2,
+    username: "gulchin",
+    password: "gulcin12",
+  },
+  {
+      id: 3,
+      username: "ali",
+      password: "a12",
+    },
+];
 
-const page = JSON.parse(localStorage.getItem("isLogin"))
-if (page) {
-  window.location.href = "index.html";
-} else {
-  const logForm = document.querySelector(".logForm");
-  const userName = document.querySelector('.userName')
-  const passWord = document.querySelector('.passWord')
+const page = JSON.parse(localStorage.getItem("isLogin"));
 
-  logForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    let obj = {
-      name: userName.value,
-      pass:passWord.value
-    }
-    let allUsers= await getDatas(userURL)
-    let findUser =allUsers.find((elem)=> obj.name && elem.pass== obj.pass)
-    if (findUser) {
-      
-      // localStorage.setItem("isLogin", JSON.stringify(true))
-      // window.location.href = "index.html";
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "False password or username",
-        footer: '<a href="/login.html">Why do I have this issue?</a>'
-      });
-    }
-  });
-}
+const logForm= document.querySelector(".logForm");
+const userName= document.createElement('input')
+const passWord= document.createElement('input')
+const submits= document.createElement('button')
+
+
+userName.className=(".userName")
+passWord.className=(".passWord")
+submits.className=(".submits")
+
+
+
+userName.placeholder=" Username"
+passWord.placeholder=" Password"
+submits.textContent=" Submit"
+
+
+logForm.append(userName,passWord,submits);
+//   console.log(submits);
+
+logForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (
+    users.find((elem) => {
+      return (
+        elem.password == passWord.value && elem.username == userName.value
+      );
+    })
+  ) {
+    localStorage.setItem("isLogin", JSON.stringify(true));
+    window.location.href = "index.html";
+  } else {
+   alert("Username ve passwordunuzu daxil edin!")
+  }
+});
